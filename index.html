@@ -34,16 +34,16 @@
                             <form class="custom-form" style="color: var(--bs-yellow);background: url(&quot;assets/img/pattern-10.svg&quot;);">
                                 <div class="row form-group">
                                     <div class="col-sm-4 col-lg-6 col-xl-5 label-column"><label class="col-form-label" for="name-input-field" style="font-family: 'Source Sans Pro', sans-serif;">Full Name</label></div>
-                                    <div class="col-sm-6 col-xl-7 input-column"><input id = "fullNameInput" class="form-control" type="text" style="border-radius: 19px;"></div>
+                                    <div class="col-sm-6 col-xl-7 input-column"><input class="form-control" type="text" style="border-radius: 19px;"></div>
                                 </div>
                                 <div class="row form-group">
-                                    <div class="col-sm-4 col-lg-6 col-xl-5 label-column"><label class="col-form-label" for="are-you-attending" style="font-family: 'Source Sans Pro', sans-serif;">Are you coming&nbsp;</label></div>
+                                    <div class="col-sm-4 col-lg-6 col-xl-5 label-column"><label class="col-form-label" for="are-you-attending" style="font-family: 'Source Sans Pro', sans-serif;">Are you coming?</label></div>
                                     <div class="col-sm-6 col-xl-7 input-column"><input type="checkbox" required="" style="transform: scale(1);border-style: none;border-radius: 0px;"></div>
                                 </div>
                                 <div class="row form-group">
-                                    <div class="col-sm-4 col-lg-6 col-xl-5 label-column"><label class="col-form-label" for="repeat-pawssword-input-field" style="font-family: 'Source Sans Pro', sans-serif;">How many&nbsp;</label></div>
+                                    <div class="col-sm-4 col-lg-6 col-xl-5 label-column"><label class="col-form-label" for="repeat-pawssword-input-field" style="font-family: 'Source Sans Pro', sans-serif;">No of Guest&nbsp;</label></div>
                                     <div class="col-sm-6 col-xl-7 input-column"><input class="form-control" type="number" style="border-radius: 30px;"></div>
-                                </div><button id ="submit-button" class="btn btn-light submit-button" type="button" style="font-size: 16px;font-family: 'Source Sans Pro', sans-serif;border-radius: 30px;">Submit</button>
+                                </div><button class="btn btn-light submit-button" type="button" style="font-size: 16px;font-family: 'Source Sans Pro', sans-serif;border-radius: 30px;">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
             </div>
         </div>
     </div>
-    <header class="header-blue" style="height: 100vh;">
+    <header class="header-blue">
         <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
             <div class="container-fluid"><a class="navbar-brand" href="#"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
@@ -65,48 +65,22 @@
                 </div>
             </div>
         </nav>
-        <div class="container hero">
+        <div class="container hero" style="height: 100vh;">
             <div class="row" style="text-align: center;">
                 <div class="col"><img class="pulse animated infinite" src="assets/img/ganesha.png" style="width: 100px;"></div>
             </div>
             <div class="row" style="text-align: center;">
                 <div class="col-12 col-lg-12 col-xl-10 offset-xl-1">
-                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" style="font-family: 'Dancing Script', serif;">We are getting Engaged !</h1>
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" style="font-family: 'Dancing Script', serif;">We are getting Engage !</h1>
                     <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1050" style="font-family: 'Source Sans Pro', sans-serif;">The pleasure of your company is requested at the engagement of&nbsp;</p>
-                    <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000" style="margin-bottom: 23px;margin-top: 0px;font-size: 31px;font-family: 'Dancing Script', serif;">Komal &amp; Achyut</p><button class="btn btn-light btn-lg action-button" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="3000" type="button" style="padding-top: 2.8px;margin-top: 30px;margin-bottom: 19px;" data-bs-target="#modal-1" data-bs-toggle="modal">RSVP</button>
+                    <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000" style="margin-bottom: 23px;margin-top: 0px;font-size: 31px;font-family: 'Dancing Script', serif;">Komal &amp; Achyut</p><button class="btn btn-light btn-lg border rounded-pill action-button" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="3000" id="rsvp-btn" type="button" style="padding-top: 2.8px;margin-top: 30px;margin-bottom: 19px;" data-bs-target="#modal-1" data-bs-toggle="modal" title="RSVP">RSVP</button>
                 </div>
             </div>
         </div>
     </header>
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyBF5S0ARJLvgSQJRcbu00acCQ_NhyWsHVY",
-          authDomain: "awesome-pivot-253022.firebaseapp.com",
-          databaseURL: "https://awesome-pivot-253022-default-rtdb.firebaseio.com",
-          projectId: "awesome-pivot-253022",
-          storageBucket: "awesome-pivot-253022.appspot.com",
-          messagingSenderId: "193498786030",
-          appId: "1:193498786030:web:9771d72357949a7661ebff",
-          measurementId: "G-7Y83DZLHH5"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,4 @@
-function writeUserData(userName, attending) {
-    
-  }
-
-  $('#submit-button').on('click', function(event) {
+$('#submit-button').on('click', function(event) {
     console.log("Started");
     event.preventDefault(); 
     var fullName =$("fullNameInput");

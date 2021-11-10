@@ -10,3 +10,7 @@
   box-sizing: border-box;
 }
 
+#rsvp-btn:hover {
+  background-color: #297f99;
+}
+
