@@ -55,7 +55,7 @@ $(document).ready(function () {
  
                 $("#alertMsg").text(e.responseText);
                 console.log("ERROR : ", e);
-                $("#submitBtn").prop("disabled", true);
+                $("#submitBtn").prop("disabled", true).val("Sent");
  
             }
         });
