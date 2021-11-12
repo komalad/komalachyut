@@ -31,19 +31,20 @@
                     <p style="font-size: 14px;font-family: 'Dancing Script', serif;"><strong>Venue: 200 Advance Blvd, Brampton, ON L6T 4V5, Canada</strong><br></p>
                     <div class="row register-form" style="margin-right: 13px;">
                         <div class="col-md-8 col-lg-8 offset-md-2" style="padding-right: 0px;">
-                            <form class="custom-form" style="color: var(--bs-yellow);background: url(&quot;assets/img/pattern-10.svg&quot;);">
+                            <form id="myform" class="custom-form" style="color: var(--bs-yellow);background: url(&quot;assets/img/pattern-10.svg&quot;);">
                                 <div class="row form-group">
                                     <div class="col-sm-4 col-lg-6 col-xl-5 label-column"><label class="col-form-label" for="name-input-field" style="font-family: 'Source Sans Pro', sans-serif;">Full Name</label></div>
-                                    <div class="col-sm-6 col-xl-7 input-column"><input class="form-control" type="text" style="border-radius: 19px;"></div>
+                                    <div class="col-sm-6 col-xl-7 input-column"><input class="form-control" type="text" id="name" style="border-radius: 19px;"></div>
                                 </div>
                                 <div class="row form-group">
                                     <div class="col-sm-4 col-lg-6 col-xl-5 label-column"><label class="col-form-label" for="are-you-attending" style="font-family: 'Source Sans Pro', sans-serif;">Are you coming?</label></div>
-                                    <div class="col-sm-6 col-xl-7 input-column"><input type="checkbox" required="" style="transform: scale(1);border-style: none;border-radius: 0px;"></div>
+                                    <div class="col-sm-6 col-xl-7 input-column"><input type="checkbox" id="chk-bx" required="" style="transform: scale(1);border-style: none;border-radius: 0px;"></div>
                                 </div>
-                                <div class="row form-group">
+                                <div class="row form-group" id="guestNoFormGrp" style="display:none">
                                     <div class="col-sm-4 col-lg-6 col-xl-5 label-column"><label class="col-form-label" for="repeat-pawssword-input-field" style="font-family: 'Source Sans Pro', sans-serif;">No of Guest&nbsp;</label></div>
-                                    <div class="col-sm-6 col-xl-7 input-column"><input class="form-control" type="number" style="border-radius: 30px;"></div>
-                                </div><button class="btn btn-light submit-button" type="button" style="font-size: 16px;font-family: 'Source Sans Pro', sans-serif;border-radius: 30px;">Submit</button>
+                                    <div class="col-sm-6 col-xl-7 input-column"><input class="form-control" type="number" id="guestNo" style="border-radius: 30px;"></div>
+                                </div>
+                                <div class="alert alert-success" role="alert" id="alertMsg" style="display:none"><span id="alertMsg">Thank you for coming.</span></div><input id="submitBtn" class="btn btn-light submit-button" type="submit" style="font-size: 16px;font-family: 'Source Sans Pro', sans-serif;border-radius: 30px;" value="Submit"/>
                             </form>
                         </div>
                     </div>
@@ -81,6 +82,8 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
