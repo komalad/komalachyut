@@ -48,7 +48,7 @@ $(document).ready(function () {
                    
                 }                    
                 console.log("SUCCESS : ", data);
-                $("#submitBtn").prop("disabled", true).val("Sent");
+                $("#submitBtn").val("Sent").prop("disabled", true);
  
             },
             error: function (e) {
